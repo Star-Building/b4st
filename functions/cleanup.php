@@ -26,7 +26,7 @@ add_action('init', 'b4st_cleanup_head');
 
 if ( ! function_exists('show_less_login_info') ) {
   function show_less_login_info() {
-    return "<strong>ERROR</strong>: Stop guessing!";
+    return "<strong>ERROR</strong>: Incorrect Password";
   }
 }
 add_filter( 'login_errors', 'show_less_login_info' );
